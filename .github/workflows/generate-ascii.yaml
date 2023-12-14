@@ -18,7 +18,7 @@ jobs:
         needs: build_job_1
         steps:
             - name: Download Dargon text file
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                 name: dragon-text-file
             - name: Test File Exists
@@ -28,7 +28,7 @@ jobs:
         needs: test_job_2
         steps:
             - name: Download Dargon text file
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                 name: dragon-text-file
             - name: Read File
