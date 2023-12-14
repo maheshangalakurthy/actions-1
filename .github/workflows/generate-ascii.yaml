@@ -9,4 +9,4 @@ jobs:
             - name: List Repo Files
               uses: ls -ltra
             - name: Executing Shell Script
-              run: sudo apt-get install cowsay -y
+              run: ./ascii-script.sh
