@@ -6,13 +6,7 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v4
-            - name: Install Coway Program
-              run: sudo apt-get install cowsay -y
-            - name: Execute Cowsay CMD
-              run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
-            - name: Test File Exits
-              run: grep -i "dragon" dragon.txt
-            - name: Read file
-              run: cat dragon.txt
             - name: List Repo Files
-              run: ls -ltra
+              uses: ls -ltra
+            - name: Executing Shell Script
+              run: sudo apt-get install cowsay -y
