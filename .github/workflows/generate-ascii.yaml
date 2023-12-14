@@ -6,6 +6,4 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v4
-            - name: List Repo Files
-              uses: ls -ltra
-            
+           
